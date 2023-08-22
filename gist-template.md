@@ -1,5 +1,5 @@
 # Title Regex Tutorial- Email edition
-This tutorial will go through how to break down the regular expressions in order to find an email
+This tutorial will go through how to break down a regular expression in order to find an email
 ## Summary
 Email Regex
  /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
