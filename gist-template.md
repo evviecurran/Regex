@@ -25,11 +25,12 @@ Email Regex
 
 /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
-^ is the beginning of the text and $ is the end of the text. These are considered the anchors. 
+^ is the beginning of the text and $ is the end of the text. These characters are considered the anchors. 
 ### Quantifiers
 
 /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
-Used to quantify how many times a part of a regular expression should be repeated - how many times you would like (an individual character, a character class or a sub-expression) it to be repeated
+
+Used to tell how many times a part of a regular expression should be repeated - how many times you would like (an individual character, a character class or a sub-expression) to be repeated 
 
 + operator : connects users email name + email service+ .com
  
@@ -58,7 +59,7 @@ What is in the () is known as a sub-expression, which captures group matches and
 
 /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
-[]- anything inside of this represents a range of characters that we want to match 
+[]- anything inside of this represents a range of characters that we want to match . 
 [a-z0-9_\.-]
 
 a-z : meaning it will match any letter a-z 
