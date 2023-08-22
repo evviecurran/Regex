@@ -1,48 +1,71 @@
-# Title (replace with your title)
-
-Introductory paragraph (replace this with your text)
-
+# Title Regex Tutorial- Email edition
+This tutorial will go through how to break down the regular expressions in order to find an email
 ## Summary
-
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+Email Regex
+ /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
 ## Table of Contents
 
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
-- [OR Operator](#or-operator)
+
 - [Character Classes](#character-classes)
-- [Flags](#flags)
-- [Grouping and Capturing](#grouping-and-capturing)
+
+- [Grouping](#grouping)
 - [Bracket Expressions](#bracket-expressions)
-- [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
+
+- [Sourcess](#sources)
+- [Author](#author)
+
 
 ## Regex Components
 
+ /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 ### Anchors
 
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+
+^ is the beginning of the text and $ is the end of the text. These are considered the anchors. 
 ### Quantifiers
 
-### OR Operator
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+Used to quantify how many times a part of a regular expression should be repeated - how many times you would like (an individual character, a character class or a sub-expression) it to be repeated
 
-### Character Classes
++ operator : connects users email name + email service+ .com
+ 
+ex:
+{2,6} which allows a match range of 2-6 characters for the character set [a-z\.]
 
-### Flags
+{n, x} - this matches the pattern starting with a minimum number (n) of times all the way to a maximum (x) number of times
 
-### Grouping and Capturing
+
+### Character Sets/Classes
+
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+
+Defines a set of characters within square brackets [] . Identifies the characters that will match a single character to the given input string. 
+### Grouping
+
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+
+What is in the () is known as a sub-expression, which captures group matches and from there it will match character sequence for possible reuse
+([a-z0-9_\.-]+)
+([\da-z\.-]+)
+([a-z\.]{2,6})
 
 ### Bracket Expressions
 
-### Greedy and Lazy Match
 
-### Boundaries
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
-### Back-references
+[]- anything inside of this represents a range of characters that we want to match 
+[a-z0-9_\.-]
 
-### Look-ahead and Look-behind
+a-z : meaning it will match any letter a-z 
+0-9: meaning it will match a single digit in these parameters
+
+
+### Sources
 
 ## Author
 
